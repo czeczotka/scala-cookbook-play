@@ -9,3 +9,5 @@ GET     /                           controllers.Application.index
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 GET     /users                      controllers.Users.users
+
+GET     /blog                       controllers.Posts.firstPost
