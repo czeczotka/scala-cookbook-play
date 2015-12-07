@@ -1,0 +1,17 @@
+@()
+
+@displayLinks(url: String, description: String) = {
+    <li><a href="@url">@description</a></li>
+}
+
+@main("Websites") {
+
+    <h1>Websites</h1>
+
+    <ul>
+        @displayLinks("http://www.google.com", "Google")
+        @displayLinks("http://www.yahoo.com", "Yahoo")
+        @displayLinks("http://blog.czeczotka.com", "My Website")
+    </ul>
+
+}
