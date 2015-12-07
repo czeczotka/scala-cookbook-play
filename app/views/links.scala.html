@@ -1,3 +1,5 @@
+@import utils.HtmlUtils.anchor
+
 @()
 
 @displayLinks(url: String, description: String) = {
@@ -11,7 +13,7 @@
     <ul>
         @displayLinks("http://www.google.com", "Google")
         @displayLinks("http://www.yahoo.com", "Yahoo")
-        @displayLinks("http://blog.czeczotka.com", "My Website")
+        <p>Here's a link to @anchor("http://blog.czeczotka.com", "My Website")</p>
     </ul>
 
 }

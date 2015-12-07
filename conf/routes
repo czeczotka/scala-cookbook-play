@@ -13,3 +13,5 @@ GET     /users                      controllers.Users.users
 GET     /blog                       controllers.Posts.firstPost
 
 GET     /links                      controllers.Application.links
+
+GET     /function                   controllers.Application.functionDemo

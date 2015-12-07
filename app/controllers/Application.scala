@@ -11,4 +11,11 @@ class Application extends Controller {
   def links() = Action {
     Ok(views.html.links())
   }
+
+  def functionDemo = Action {
+    Ok(views.html.function(sayHello))
+  }
+
+  def sayHello = <p>Hello, via a function</p>
+
 }
