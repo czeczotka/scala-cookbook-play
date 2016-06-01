@@ -15,3 +15,5 @@ GET     /blog                       controllers.Posts.firstPost
 GET     /links                      controllers.Application.links
 
 GET     /function                   controllers.Application.functionDemo
+
+GET     /tnc                        controllers.Application.tnc
