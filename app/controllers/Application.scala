@@ -18,4 +18,7 @@ class Application extends Controller {
 
   def sayHello = <p>Hello, via a function</p>
 
+  def tnc = Action {
+    Ok(views.html.tnc("These are T&Cs"))
+  }
 }
