@@ -1,0 +1,13 @@
+@(product: (String, String), items: List[String])
+
+@main(product._1) {
+
+    @cartWidget(items)
+
+    <div style="padding:10px; margin:10px;">
+        <h1>@product._1</h1>
+        <div id="product_info">
+            <p>@product._2</p>
+        </div>
+    </div>
+}

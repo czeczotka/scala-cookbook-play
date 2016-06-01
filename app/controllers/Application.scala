@@ -21,4 +21,10 @@ class Application extends Controller {
   def tnc = Action {
     Ok(views.html.tnc("These are T&Cs"))
   }
+
+  def product = Action {
+    val grapes = ("Grapes", "Grapes are nutritious and delicious")
+    val cart = List("apples", "bananas", "carrots")
+    Ok(views.html.product(grapes, cart))
+  }
 }
